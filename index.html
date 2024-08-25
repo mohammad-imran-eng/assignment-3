@@ -14,14 +14,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/3fb67956d2.js" crossorigin="anonymous"></script>
+  <!-- custom css link -->
+   <link rel="stylesheet" href="style.css">
   <script>
+  
     tailwind.config = {
       theme: {
         extend: {
-          boxShadow: {
-        boxShadow: '0px 1px 1px rgba(9, 30, 66, 0.25), 0px 0px 1px 1px rgba(9, 30, 66, 0.13);',
-        bShadow: '  0 0 10px 0 rgba(0,0,0,0.45) inset;'
-      },
+      //     boxShadow: {
+      //         boxShadow: '0px 1px 1px rgba(9, 30, 66, 0.25), 0px 0px 1px 1px rgba(9, 30, 66, 0.13);',
+      //         bShadow: '0 0 10px 0 rgba(0,0,0,0.45) inset;'
+      // },
           colors: {
             clifford: '#1C1C1C',
             primary: '#ABEF5F',
@@ -55,9 +58,9 @@
         <div class="navbar-start">
 
           <a class="btn btn-ghost text-xl" href="/#">
-            <div class="bg-primary p-1 rounded-full -rotate-45 mt-2">
+            <div class="bg-[#ABEF5F] p-1 rounded-full -rotate-45 mt-2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-5 bg-primary">
+                stroke="currentColor" class="size-5 bg-[#ABEF5F]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </div>
@@ -92,7 +95,7 @@
             </svg>
           </div>
           <!-- book consult -->
-          <div class="flex bg-primary py-2 px-4 rounded-full font-bold sm:invisible lg:visible md:visible invisible">
+          <div class="flex bg-[#ABEF5F] py-2 px-4 rounded-full font-bold sm:invisible lg:visible md:visible invisible">
             <h4 class="mr-1">Book consult</h4>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="size-6 -rotate-45">
@@ -105,7 +108,7 @@
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <i class="fa-solid fa-bars"></i>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 z-10">
+            <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box mt-3 w-52 p-2 shadow right-0 z-10">
               <li class="mx-3 font-bold text-[#737373] hover:text-[#494949]"><a>Home</a></li>
               <li class="mx-3 font-bold text-[#737373] hover:text-[#494949]"><a>Services</a></li>
               <li class="mx-3 font-bold text-[#737373] hover:text-[#494949]"><a>Portpolio</a></li>
@@ -128,7 +131,7 @@
           sleek metal accents, and large <br> windows that flood the space with natural light.</p>
               <div class="grid justify-center">
                 <button class="flex bg-[#ABEF5F80] font-bold py-3 px-4 rounded-full mb-10">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-6 bg-primary -rotate-45 rounded-full p-1 ml-1">
+                  stroke="currentColor" class="size-6 bg-[#ABEF5F] -rotate-45 rounded-full p-1 ml-1">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg> 
                 </button>
@@ -234,25 +237,25 @@
             </div>
             <!-- card one -->
              <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 place-items-center">
-              <div class="bg-cardOne rounded-2xl	p-5">
+              <div class="bg-[#E7C1D3] rounded-2xl	p-5">
                 <img src="assets/concept.png" alt="">
                 <h4 class="font-bold text-2xl text-clifford paraColor">Concept</h4>
                 <p>The barn house captivates <br> with its blend of rustic charm and modern.</p>
                </div>
                <!-- card two -->
-               <div class="bg-cardTwo rounded-2xl	p-5">
+               <div class="bg-[#EFDA6E] rounded-2xl	p-5">
                 <img src="assets/flow-chart.png" alt="">
                 <h4 class="font-bold text-2xl text-clifford paraColor">Design Process</h4>
                 <p>The barn house captivates <br> with its blend of rustic charm and modern.</p>
                </div>
                <!-- card three -->
-               <div class="bg-cardThree rounded-2xl	p-5">
+               <div class="bg-[#A4DAC3] rounded-2xl	p-5">
                 <img src="assets/vision.png" alt="">
                 <h4 class="font-bold text-2xl text-clifford paraColor">Supervision</h4>
                 <p>The barn house captivates <br> with its blend of rustic charm and modern.</p>
                </div>
                <!-- card four -->
-               <div class="bg-cardFour rounded-2xl p-5">
+               <div class="bg-[#77AAEA] rounded-2xl p-5">
                 <img src="assets/budget-planning.png" alt="">
                 <h4 class="font-bold text-2xl text-clifford paraColor">Budget Planning</h4>
                 <p>The barn house captivates <br> with its blend of rustic charm and modern.</p>
@@ -284,7 +287,7 @@
               <h2 class="text-secondaryColor text-2xl font-bold">Commercial</h2>
               <p class="text-paraColor font-medium">The barn house captivates with its blend of rustic charm <br> and modern. The barn house captivates with its blend of <br> rustic charm and modern .</p>
               <a class="flex font-bold text-2xl text-headingColor">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6 bg-primary -rotate-45 rounded-full p-1 ml-1 mt-1">
+                stroke="currentColor" class="size-6 bg-[#ABEF5F] -rotate-45 rounded-full p-1 ml-1 mt-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
               </a>
@@ -307,7 +310,7 @@
                 <h2 class="text-secondaryColor text-2xl font-bold">Commercial</h2>
                 <p class="text-paraColor font-medium">The barn house captivates with its blend of rustic charm <br> and modern. The barn house captivates with its blend of <br> rustic charm and modern .</p>
                 <a class="flex font-bold text-2xl text-headingColor">View Details <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-6 bg-primary -rotate-45 rounded-full p-1 ml-1 mt-1">
+                  stroke="currentColor" class="size-6 bg-[#ABEF5F] -rotate-45 rounded-full p-1 ml-1 mt-1">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
                 </a>
@@ -411,7 +414,7 @@
                  <h2 class="text-secondaryColor font-bold text-2xl">How to choose the furniture <br> right  of your home.</h2>
                  <p class="text-paraColor font-medium">The barn house captivates with its blend of <br> rustic charm and modern. </p>
                  <a class="flex font-bold text-2xl text-headingColor">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-6 bg-primary -rotate-45 rounded-full p-1 ml-1 mt-1">
+                  stroke="currentColor" class="size-6 bg-[#ABEF5F] -rotate-45 rounded-full p-1 ml-1 mt-1">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
                 </a>
@@ -436,7 +439,7 @@
                <h2 class="text-secondaryColor font-bold text-2xl">How to choose the furniture <br> right  of your home.</h2>
                <p class="text-paraColor font-medium">The barn house captivates with its blend of <br> rustic charm and modern. </p>
                <a class="flex font-bold text-2xl text-headingColor">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6 bg-primary -rotate-45 rounded-full p-1 ml-1 mt-1">
+                stroke="currentColor" class="size-6 bg-[#ABEF5F] -rotate-45 rounded-full p-1 ml-1 mt-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
               </a>
@@ -460,7 +463,7 @@
                <h2 class="text-secondaryColor font-bold text-2xl">How to choose the furniture <br> right  of your home.</h2>
                <p class="text-paraColor font-medium">The barn house captivates with its blend of <br> rustic charm and modern. </p>
                <a class="flex font-bold text-2xl text-headingColor">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6 bg-primary -rotate-45 rounded-full p-1 ml-1 mt-1">
+                stroke="currentColor" class="size-6 bg-[#ABEF5F] -rotate-45 rounded-full p-1 ml-1 mt-1">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
               </a>
@@ -471,7 +474,7 @@
         </div>
      </section>
      <!-- connect page -->
-      <section class="bg-bgImg">
+      <section class="bg-[url('./assets/bg.jpg')]">
         <div class="py-5">
           <!-- heading part -->
         <div class="grid place-items-center mt-28">
@@ -492,7 +495,7 @@
           <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1" type="number" placeholder="Phone number">
           <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1" type="email" placeholder="Enter email">
           <textarea class="col-span-2 p-5 rounded-2xl h-60" name="" id="" placeholder="Write your message here"></textarea>
-          <div class="flex bg-primary py-2 px-4 rounded-full font-bold col-span-2 justify-center">
+          <div class="flex bg-[#ABEF5F] py-2 px-4 rounded-full font-bold col-span-2 justify-center">
             <h4 class="mr-1">Book consult</h4>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="size-6 -rotate-45">
@@ -508,12 +511,12 @@
         <div class="pt-8">
           <div class="flex justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6 bg-primary -rotate-45 rounded-full p-1 mr-1 mt-2">
+            stroke="currentColor" class="size-6 bg-[#ABEF5F] -rotate-45 rounded-full p-1 mr-1 mt-2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>
           <h4 class="font-bold text-3xl text-[#E9E9E9]">Rinterio</h4>
           </div>
-          <p class="flex justify-center text-center text-paraColor mt-3">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+          <p class="flex justify-center text-center text-[#737373] mt-3">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
             <!-- nav items -->
             <div class="flex justify-center mt-8 lg:flex-row sm:flex-col text-center">
               <li class="mx-8 list-none mb-4  text-[#E9E0E9] hover:text-[#494949]"><a>Home</a></li>
@@ -524,7 +527,7 @@
             </div>
             <!-- book consult -->
              <div class="grid place-items-center mt-10">
-              <button class="flex bg-primary rounded-full py-2 px-3">
+              <button class="flex bg-[#ABEF5F] rounded-full py-2 px-3">
                 <h4 class="mr-1">Book consult</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="size-6 -rotate-45">
