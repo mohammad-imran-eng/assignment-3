@@ -21,10 +21,10 @@
     tailwind.config = {
       theme: {
         extend: {
-      //     boxShadow: {
-      //         boxShadow: '0px 1px 1px rgba(9, 30, 66, 0.25), 0px 0px 1px 1px rgba(9, 30, 66, 0.13);',
-      //         bShadow: '0 0 10px 0 rgba(0,0,0,0.45) inset;'
-      // },
+           boxShadow: {
+               boxShadow: '0px 1px 1px rgba(9, 30, 66, 0.25), 0px 0px 1px 1px rgba(9, 30, 66, 0.13);',
+               bShadow: '0 0 10px 0 rgba(0,0,0,0.45) inset;'
+       },
           colors: {
             clifford: '#1C1C1C',
             primary: '#ABEF5F',
@@ -279,7 +279,7 @@
         </div>
         <!-- grid item one -->
          <div class="grid grid-cols-4 gap-5">
-          <div class="flex lg:flex-none sm:flex-col lg:col-span-3 sm:col-span-4  p-4 shadow-boxShadow rounded-xl items-center">
+          <div class="lg:flex lg:col-span-3 sm:col-span-4  p-4 shadow-boxShadow rounded-xl items-center grid place-items-center">
             <div class="mr-4">
               <img src="assets/img1.png" alt="">
             </div>
@@ -299,11 +299,11 @@
          </div>
          <!-- grid item two -->
          <div class="grid grid-cols-5 gap-5 mt-4">
-            <div class="p-4 shadow-boxShadow grid lg:grid-cols-1 sm:grid-cols-5  items-center justify-center rounded-xl">
+            <div class="p-4 shadow-boxShadow grid grid-cols-1 sm:grid-cols-subgrid items-center justify-center rounded-xl">
               <img src="assets/img3.png" alt="">
             </div>
-            <div class="flex p-4 col-span-3 lg:grid-cols-3 sm:grid-cols-5 shadow-boxShadow rounded-xl items-center">
-              <div class="mr-4">
+            <div class="flex p-4 col-span-3 grid-cols-3 shadow-boxShadow rounded-xl items-center">
+              <div class="mr-4 ">
                 <img src="assets/img4.png" alt="">
               </div>
               <div>
@@ -316,7 +316,7 @@
                 </a>
               </div>
             </div>
-            <div class="p-4 shadow-boxShadow grid lg:grid-cols-1 sm:grid-cols-5 items-center justify-center rounded-xl">
+            <div class="p-4 shadow-boxShadow grid grid-cols-1 items-center justify-center rounded-xl">
               <img src="assets/img5.png" alt="">
             </div>
          </div>
@@ -358,7 +358,9 @@
           <input type="radio" name="my-accordion-3" checked="checked" />
           <div class="collapse-title text-xl font-medium">Private investment and mortgages typically fund residential construction projects.</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>residential properties are those that are used for residential purposes, i.e., houses, apartments, bungalows, etc., and commercial properties are those that are used for business purposes+
+              3
+            </p>
           </div>
         </div>
         <div class="collapse collapse-plus bg-base-200">
@@ -473,6 +475,95 @@
           </div>
         </div>
      </section>
+     <!-- meet our team -->
+      <section class="w-11/12 mx-auto mb-10">
+        <div class="grid place-items-center mt-20">
+          <button class="flex bg-[#bddb9c] p-1 px-3 rounded-full font-bold text-secondaryColor justify-center"> 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-3 mt-2 mr-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+                Team
+          </button>
+          <h1 class="text-4xl font-bold text-headingColor mt-3">Meet Our Team Members</h1>
+          <p class="font-medium text-secondaryColor text-center mt-6 mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+
+        <div class="grid gap-10 grid-rows-2 lg:grid-cols-3 sm:grid-cols-1">
+          <!-- firt card -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Daniel cruez</h2>
+              <p>Architect</p>
+            </div>
+            <figure>
+              <img class="h-96"
+                src="./assets/member-1.jpg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <!-- second card -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Robartow</h2>
+              <p>Architect</p>
+            </div>
+            <figure>
+              <img class="h-96"
+                src="./assets/member-2.jpg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <!-- third card -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Martinez</h2>
+              <p>Architect</p>
+            </div>
+            <figure>
+              <img class="h-96"
+                src="./assets/member-3.jpg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <!-- fourth card -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Noman abey</h2>
+              <p>Architect</p>
+            </div>
+            <figure>
+              <img class="h-96"
+                src="./assets/member-4.jpg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <!-- fifth card -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Farnandoze</h2>
+              <p>Architect</p>
+            </div>
+            <figure>
+              <img class="h-96"
+                src="./assets/member-5.jpg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <!-- sixth card -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Christiano de silva</h2>
+              <p>Architect</p>
+            </div>
+            <figure>
+              <img class="h-96"
+                src="./assets/member-6.jpg"
+                alt="Shoes" />
+            </figure>
+          </div>
+        </div>
+      </section>
      <!-- connect page -->
       <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
         <div class="py-5">
@@ -490,11 +581,11 @@
         </div>
         <!-- input part -->
         <div class="w-9/12 mx-auto grid lg:grid-cols-2 gap-5">
-          <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1 sm:w-full" type="text" placeholder="First name">
-          <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1 w-full" type="text" placeholder="Last name">
-          <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1 w-full" type="number" placeholder="Phone number">
-          <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1 w-full" type="email" placeholder="Enter email">
-          <textarea class="col-span-2 p-5 rounded-2xl h-60 w-full" name="" id="" placeholder="Write your message here"></textarea>
+          <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1" type="text" placeholder="First name">
+          <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1" type="text" placeholder="Last name">
+          <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1" type="number" placeholder="Phone number">
+          <input class="p-5 rounded-full sm:col-span-2 lg:col-span-1" type="email" placeholder="Enter email">
+          <textarea class="col-span-2  p-5 rounded-2xl h-60" name="" id="" placeholder="Write your message here"></textarea>
           <div class="flex bg-[#ABEF5F] py-2 px-4 rounded-full font-bold col-span-2 justify-center">
             <h4 class="mr-1">Book consult</h4>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
